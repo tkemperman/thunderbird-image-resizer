@@ -84,4 +84,4 @@ Use the XPI for submission to [Thunderbird Add-ons](https://addons.thunderbird.n
 
 The add-on has a neutral UUID identifier, with no personal author, email address, or machine-specific configuration. Keep the identifier unchanged after publication so future releases update the same add-on. This identifier differs from earlier development builds; disable or remove a development build before installing the public package to avoid duplicate controls.
 
-A license has not yet been selected. Public repository access alone does not grant an open-source license.
+Licensed under the [MIT License](LICENSE). The license is included in generated XPI and source packages.

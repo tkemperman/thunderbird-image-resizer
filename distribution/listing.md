@@ -52,4 +52,4 @@ The manifest includes the finite `strict_max_version` required for Mail Experime
 - Privacy statement: `PRIVACY.md`
 - Website: the public repository's home page.
 
-Choose the publisher display name and license in the submission form. No personal author or contact information is embedded in the package. These prepared materials have not been submitted to Thunderbird Add-ons.
+Select **MIT License** in the submission form and choose the publisher display name. The full license is in `LICENSE`. No personal author or contact information is embedded in the package. These prepared materials have not been submitted to Thunderbird Add-ons.

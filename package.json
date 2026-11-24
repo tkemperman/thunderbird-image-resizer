@@ -1,6 +1,7 @@
 {
   "name": "thunderbird-image-resizer",
   "version": "1.0.1",
+  "license": "MIT",
   "private": true,
   "type": "module",
   "scripts": {
