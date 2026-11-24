@@ -1,8 +1,12 @@
 # Image Resizer for Thunderbird
 
+<img src="src/icons/image-resizer-128.png" alt="Image Resizer: a photo compressed in a bench vise" width="64" height="64">
+
 An image size selector directly above the message body. Works with **inline images** inserted through **Insert → Image**, pasted or dropped into the message, and with **image attachments**. All add-on text is English.
 
 The bar appears when the message contains eligible images. Choose a size on the right; **Total** on the left shows the combined size of the inline images and image attachments. Both the visible inline images and the attachment contents change immediately.
+
+![Image Resizer in Thunderbird, showing a resized inline image and the combined image size](distribution/images/compose-medium.png)
 
 | Choice | Maximum long edge | JPEG / WebP encoding quality |
 | --- | ---: | ---: |
@@ -35,7 +39,7 @@ The build has no npm dependencies. It requires Node.js 20+ and Python 3.
 npm run check
 ```
 
-This checks JavaScript syntax, runs the tests, and produces `dist/image-resizer-1.0.1.xpi` and `dist/image-resizer-1.0.1-source.zip`. To build only:
+This checks JavaScript syntax, runs the tests, and produces `dist/image-resizer-1.0.2.xpi` and `dist/image-resizer-1.0.2-source.zip`. To build only:
 
 ```sh
 npm run build
@@ -75,6 +79,7 @@ Local test results are excluded from both distribution archives and the public r
 - `src/api/imageResizeUI/`: native compose bar, editor observation, inline image access and large-image confirmation.
 - `src/background.js`: event wiring.
 - `scripts/build.py`: deterministic XPI and source packaging with an explicit public-file selection.
+- `scripts/render_icons.py`: regenerate PNG icon sizes from the editable SVG using `rsvg-convert` (only needed when changing the icon).
 
 Technical references: [Thunderbird compose API](https://webextension-api.thunderbird.net/en/mv2/compose.html) and [Thunderbird Experiments](https://developer.thunderbird.net/add-ons/mailextensions/experiments).
 

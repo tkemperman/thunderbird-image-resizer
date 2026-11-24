@@ -47,9 +47,17 @@ The manifest includes the finite `strict_max_version` required for Mail Experime
 
 ## Submission materials
 
-- XPI: `dist/image-resizer-1.0.1.xpi`
-- Source: `dist/image-resizer-1.0.1-source.zip`
+- XPI: `dist/image-resizer-1.0.2.xpi`
+- Source: `dist/image-resizer-1.0.2-source.zip`
 - Privacy statement: `PRIVACY.md`
+- Add-on icon (64 × 64 PNG): `src/icons/image-resizer-64.png`
+- Screenshot (1280 × 800 PNG): `distribution/images/compose-medium.png`
 - Website: the public repository's home page.
 
 Select **MIT License** in the submission form and choose the publisher display name. The full license is in `LICENSE`. No personal author or contact information is embedded in the package. These prepared materials have not been submitted to Thunderbird Add-ons.
+
+## Screenshot caption
+
+Resize inline images as you compose and see the combined image size instantly. The size selector offers Original size, Small, Medium, and Large.
+
+The screenshot is an actual Thunderbird compose window captured through Marionette in an isolated demo profile. It uses fictional example.com addresses and a generated landscape illustration. It contains no personal email or account data.

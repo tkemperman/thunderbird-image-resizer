@@ -41,4 +41,5 @@ source_files = extension_files + [root / name for name in ("README.md", "PRIVACY
 source_files += list((root / "scripts").glob("*.py"))
 source_files += list((root / "tests").glob("*.test.js"))
 source_files += list((root / "distribution").glob("*.md"))
+source_files += list((root / "distribution" / "images").glob("*.png"))
 write_archive(dist / f"image-resizer-{manifest['version']}-source.zip", source_files, root)

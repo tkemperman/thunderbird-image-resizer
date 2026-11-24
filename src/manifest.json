@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Image Resizer",
   "description": "__MSG_extensionDescription__",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "default_locale": "en",
   "browser_specific_settings": {
     "gecko": {
@@ -18,8 +18,12 @@
     "page": "background.html"
   },
   "icons": {
-    "32": "icons/image.svg",
-    "64": "icons/image.svg"
+    "16": "icons/image-resizer-16.png",
+    "32": "icons/image-resizer-32.png",
+    "48": "icons/image-resizer-48.png",
+    "64": "icons/image-resizer-64.png",
+    "128": "icons/image-resizer-128.png",
+    "256": "icons/image-resizer-256.png"
   },
   "experiment_apis": {
     "imageResizeUI": {
