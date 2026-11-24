@@ -47,8 +47,8 @@ The manifest includes the finite `strict_max_version` required for Mail Experime
 
 ## Submission materials
 
-- XPI: `dist/image-resizer-1.0.4.xpi`
-- Source: `dist/image-resizer-1.0.4-source.zip`
+- XPI: `dist/image-resizer-1.0.5.xpi`
+- Source: `dist/image-resizer-1.0.5-source.zip`
 - Privacy statement: `PRIVACY.md`
 - Add-on icon (64 × 64 PNG): `src/icons/image-resizer-64.png`
 - Screenshot (1280 × 800 PNG): `distribution/images/compose-medium.png`
