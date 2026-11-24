@@ -35,13 +35,13 @@ The build has no npm dependencies. It requires Node.js 20+ and Python 3.
 npm run check
 ```
 
-This checks JavaScript syntax, runs the tests, and produces `dist/image-resizer-1.0.0.xpi` and `dist/image-resizer-1.0.0-source.zip`. To build only:
+This checks JavaScript syntax, runs the tests, and produces `dist/image-resizer-1.0.1.xpi` and `dist/image-resizer-1.0.1-source.zip`. To build only:
 
 ```sh
 npm run build
 ```
 
-In Thunderbird, open **Add-ons and Themes → gear menu → Install Add-on From File**, then select the XPI. No restart is normally needed. The manifest requires Thunderbird 128 or later; live testing was performed with Thunderbird 160 on Linux.
+In Thunderbird, open **Add-ons and Themes → gear menu → Install Add-on From File**, then select the XPI. No restart is normally needed. The manifest permits Thunderbird 128–160; live testing was performed with Thunderbird 160 on Linux.
 
 This add-on uses a small Thunderbird Experiment API to place the controls in the native compose window and access inline images. Thunderbird therefore displays its full-access permission prompt. Image processing happens locally; the add-on has no analytics, external services, or network endpoints. It does not request the permission to send messages on its own.
 

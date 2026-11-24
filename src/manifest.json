@@ -2,12 +2,13 @@
   "manifest_version": 2,
   "name": "Image Resizer",
   "description": "__MSG_extensionDescription__",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "default_locale": "en",
   "browser_specific_settings": {
     "gecko": {
       "id": "{0ca65651-d635-4f4f-b8fd-ed492e35dd46}",
-      "strict_min_version": "128.0"
+      "strict_min_version": "128.0",
+      "strict_max_version": "160.*"
     }
   },
   "permissions": [

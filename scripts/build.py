@@ -6,6 +6,10 @@ from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
 root = Path(__file__).resolve().parent.parent
 source = root / "src"
 manifest = json.loads((source / "manifest.json").read_text())
+if manifest.get("experiment_apis"):
+    maximum = manifest.get("browser_specific_settings", {}).get("gecko", {}).get("strict_max_version")
+    if not maximum or maximum == "*":
+        raise ValueError("Thunderbird Experiment APIs require a finite strict_max_version before packaging")
 for locale in ("en",):
     messages = json.loads((source / "_locales" / locale / "messages.json").read_text())
     assert "extensionDescription" in messages and "actionTitle" in messages

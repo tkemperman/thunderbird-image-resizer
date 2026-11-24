@@ -37,12 +37,18 @@ The `compose` API handles attachment reads and replacements. `src/images.js` per
 
 Run `npm run check` with Node.js 20+ and Python 3. This runs the tests and builds the XPI. `npm run build` packages the files from `src/` without transformation. The source archive also includes the build script, tests, documentation, and privacy statement, but no local test emails or screenshots.
 
-The manifest targets Thunderbird 128 and later. Live validation has been performed on Thunderbird 160 on Linux; compatibility with other versions still needs testing before making broader compatibility claims.
+The manifest targets Thunderbird 128–160, with `strict_max_version` set to `160.*` because the add-on includes an Experiment API. Live validation has been performed on Thunderbird 160 on Linux; compatibility with other versions still needs testing before making broader compatibility claims.
+
+## Validator compatibility warnings
+
+A Firefox-oriented validator may warn that the `compose` permission and `compose.onAttachmentAdded`, `compose.onAttachmentRemoved`, and `compose.onBeforeSend` are unsupported. These are documented Thunderbird APIs required by this Thunderbird-only add-on; see the [compose API reference](https://webextension-api.thunderbird.net/en/mv2/compose.html). Do not remove them to satisfy Firefox compatibility checks.
+
+The manifest includes the finite `strict_max_version` required for Mail Experiments. Future Thunderbird major versions require compatibility testing and an updated maximum version.
 
 ## Submission materials
 
-- XPI: `dist/image-resizer-1.0.0.xpi`
-- Source: `dist/image-resizer-1.0.0-source.zip`
+- XPI: `dist/image-resizer-1.0.1.xpi`
+- Source: `dist/image-resizer-1.0.1-source.zip`
 - Privacy statement: `PRIVACY.md`
 - Website: the public repository's home page.
 
