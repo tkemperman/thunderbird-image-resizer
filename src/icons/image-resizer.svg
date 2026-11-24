@@ -7,10 +7,12 @@
   </defs>
   <rect x="8" y="8" width="112" height="112" rx="26" fill="url(#tile)"/>
   <!-- A photo held between the jaws of a bench vise. -->
-  <rect x="35" y="27" width="52" height="50" rx="5" fill="#FFD46B" stroke="#FFF3CF" stroke-width="3"/>
-  <circle cx="73" cy="40" r="5" fill="#FFFFFF"/>
-  <path d="m37 66 15-19 15 18 8-10 10 12v8H37z" fill="#22656C"/>
-  <path d="m37 69 16-11 14 17H37z" fill="#36868A"/>
+  <g transform="translate(0 -6)">
+    <rect x="35" y="27" width="52" height="50" rx="5" fill="#FFD46B" stroke="#FFF3CF" stroke-width="3"/>
+    <circle cx="73" cy="40" r="5" fill="#FFFFFF"/>
+    <path d="m37 66 15-19 15 18 8-10 10 12v8H37z" fill="#22656C"/>
+    <path d="m37 69 16-11 14 17H37z" fill="#36868A"/>
+  </g>
   <!-- Fixed jaw, sliding jaw and the threaded spindle. -->
   <rect x="21" y="39" width="14" height="49" rx="3" fill="#F4F7FB"/>
   <rect x="87" y="39" width="12" height="49" rx="3" fill="#D9E4F2"/>
