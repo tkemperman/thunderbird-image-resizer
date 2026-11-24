@@ -1,0 +1,47 @@
+{
+  "extensionDescription": {
+    "message": "Resize inline images and attachments with a live size selector in the compose window."
+  },
+  "actionTitle": {
+    "message": "Image size"
+  },
+  "sizeLabel": {
+    "message": "Image size"
+  },
+  "totalLabel": {
+    "message": "Total"
+  },
+  "calculating": {
+    "message": "Calculating\u2026"
+  },
+  "unchanged": {
+    "message": "$1 image(s) kept original"
+  },
+  "sizeTooltip": {
+    "message": "Combined size of inline images and image attachments, before email encoding. Other attachments and web-hosted images are not included."
+  },
+  "updateFailed": {
+    "message": "Could not update the images. Sending is paused. Check your attachments and retry."
+  },
+  "restoreFailed": {
+    "message": "Could not restore all originals. Sending is paused. Choose Original size and retry, or reattach the original files."
+  },
+  "retry": {
+    "message": "Retry"
+  },
+  "largeWarning": {
+    "message": "Images exceed 10 MB. Choose a smaller image size to reduce the email size."
+  },
+  "largeTitle": {
+    "message": "Large images"
+  },
+  "largeMessage": {
+    "message": "The images in this email total $1, which exceeds 10 MB. Go back to choose a smaller image size, or continue sending."
+  },
+  "continueSending": {
+    "message": "Continue sending"
+  },
+  "goBack": {
+    "message": "Go back"
+  }
+}

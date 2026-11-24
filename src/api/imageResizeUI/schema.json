@@ -1,0 +1,155 @@
+[
+  {
+    "namespace": "imageResizeUI",
+    "functions": [
+      {
+        "name": "init",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "name": "labels",
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      {
+        "name": "setState",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "name": "tabId",
+            "type": "integer"
+          },
+          {
+            "name": "state",
+            "type": "object",
+            "properties": {
+              "selected": {
+                "type": "string"
+              },
+              "visible": {
+                "type": "boolean"
+              },
+              "busy": {
+                "type": "boolean"
+              },
+              "ready": {
+                "type": "boolean"
+              },
+              "error": {
+                "type": "string"
+              },
+              "count": {
+                "type": "integer"
+              },
+              "total": {
+                "type": "number"
+              },
+              "originalTotal": {
+                "type": "number"
+              },
+              "unchanged": {
+                "type": "integer"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "listInlineImages",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "name": "tabId",
+            "type": "integer"
+          }
+        ]
+      },
+      {
+        "name": "getInlineImage",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "name": "tabId",
+            "type": "integer"
+          },
+          {
+            "name": "id",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "name": "updateInlineImage",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "name": "tabId",
+            "type": "integer"
+          },
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "data",
+            "type": "object",
+            "properties": {
+              "original": {
+                "type": "boolean"
+              },
+              "dataUrl": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "confirmLargeImages",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "name": "tabId",
+            "type": "integer"
+          },
+          {
+            "name": "bytes",
+            "type": "number"
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "name": "onChange",
+        "type": "function",
+        "parameters": [
+          {
+            "name": "tabId",
+            "type": "integer"
+          },
+          {
+            "name": "value",
+            "type": "string"
+          }
+        ]
+      }
+    ]
+  }
+]

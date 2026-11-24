@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "Image Resizer",
+  "description": "__MSG_extensionDescription__",
+  "version": "1.0.0",
+  "default_locale": "en",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{0ca65651-d635-4f4f-b8fd-ed492e35dd46}",
+      "strict_min_version": "128.0"
+    }
+  },
+  "permissions": [
+    "compose"
+  ],
+  "background": {
+    "page": "background.html"
+  },
+  "icons": {
+    "32": "icons/image.svg",
+    "64": "icons/image.svg"
+  },
+  "experiment_apis": {
+    "imageResizeUI": {
+      "schema": "api/imageResizeUI/schema.json",
+      "parent": {
+        "scopes": [
+          "addon_parent"
+        ],
+        "paths": [
+          [
+            "imageResizeUI"
+          ]
+        ],
+        "script": "api/imageResizeUI/implementation.js"
+      }
+    }
+  }
+}

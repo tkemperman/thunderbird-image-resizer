@@ -1,0 +1,12 @@
+{
+  "name": "thunderbird-image-resizer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "build": "python3 scripts/build.py",
+    "check": "node --check src/background.js && node --check src/controller.js && node --check src/images.js && node --check src/api/imageResizeUI/implementation.js && npm test && npm run build"
+  },
+  "description": "Resize inline images and image attachments directly in Thunderbird's compose window."
+}
