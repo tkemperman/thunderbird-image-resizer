@@ -85,6 +85,8 @@ Technical references: [Thunderbird compose API](https://webextension-api.thunder
 
 ## Distribution
 
+**Gallery rejection (November 2026):** Thunderbird Add-ons rejected this add-on because it uses the custom `imageResizeUI` Experiment API. New submissions currently only allow unmodified copies of the published Thunderbird API drafts. This restriction concerns gallery admission; the XPI can still be installed and distributed independently without signing.
+
 Use the XPI for submission to [Thunderbird Add-ons](https://addons.thunderbird.net/). The source ZIP contains the matching readable source and build instructions. [Listing text and reviewer notes](distribution/listing.md) and a [privacy statement](PRIVACY.md) are included.
 
 The add-on has a neutral UUID identifier, with no personal author, email address, or machine-specific configuration. Keep the identifier unchanged after publication so future releases update the same add-on. This identifier differs from earlier development builds; disable or remove a development build before installing the public package to avoid duplicate controls.
