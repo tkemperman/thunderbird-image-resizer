@@ -23,7 +23,7 @@ var imageResizeUI = class extends ChromeUtils.importESModule("resource://gre/mod
       bar.hidden = true;
       bar.style.cssText = "flex:0 0 auto; padding:5px 12px; border-bottom:1px solid var(--splitter-color, GrayText); color:inherit; background:var(--toolbar-bgcolor, Canvas); font:message-box;";
       const row = html("div");
-      row.style.cssText = "display:flex; align-items:center; flex-wrap:wrap; gap:6px 12px; min-height:24px;";
+      row.style.cssText = "display:none; align-items:center; flex-wrap:wrap; gap:6px 12px; min-height:24px;";
       const total = html("span");
       total.id = "image-resize-total";
       total.style.cssText = "font-variant-numeric:tabular-nums; white-space:nowrap;";
@@ -72,7 +72,7 @@ var imageResizeUI = class extends ChromeUtils.importESModule("resource://gre/mod
       warning.textContent = labels.largeWarning;
       bar.append(row, warning, error);
       editor.before(bar);
-      const view = { bar, select, total, status, error, errorText, retry, change, retryChange, warning,
+      const view = { bar, row, select, total, status, error, errorText, retry, change, retryChange, warning,
         editor, images: new Map(), nodeIds: new WeakMap(), timer: null, observer: null, editorDocument: null };
       views.set(window, view);
       const refresh = () => {
@@ -204,6 +204,8 @@ var imageResizeUI = class extends ChromeUtils.importESModule("resource://gre/mod
         const view = attach(window);
         if (!view) return;
         view.bar.hidden = !state.visible;
+        // An error can keep the bar visible even when no images were found.
+        view.row.style.display = state.count > 0 ? "flex" : "none";
         view.select.value = state.selected;
         view.select.disabled = !!window.gWindowLocked;
         for (const option of view.select.options) option.disabled = option.value !== "original" && !state.ready;

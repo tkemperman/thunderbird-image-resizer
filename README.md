@@ -39,7 +39,7 @@ The build has no npm dependencies. It requires Node.js 20+ and Python 3.
 npm run check
 ```
 
-This checks JavaScript syntax, runs the tests, and produces `dist/image-resizer-1.0.7.xpi` and `dist/image-resizer-1.0.7-source.zip`. To build only:
+This checks JavaScript syntax, runs the tests, and produces `dist/image-resizer-1.0.8.xpi` and `dist/image-resizer-1.0.8-source.zip`. To build only:
 
 ```sh
 npm run build
